@@ -1,4 +1,4 @@
-# Remedy Recheck — Group 7
+# Remedy Recheck-Group 7
 
 Project website and working web-app prototype for **TEK830 Sustainable Digitalization in Practice** at Chalmers University of Technology.
 
