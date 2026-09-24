@@ -4,7 +4,7 @@ const { components } = global.RemedyRecheck;
 components.TeamMemberCardView = class TeamMemberCardView {
   render(member) {
     const card = document.createElement(member.email ? "a" : "article");
-    card.className = `team-card reveal${member.hasContactCard ? "" : " is-placeholder"}`;
+    card.className = `team-card reveal${member.hasContactCard ? "" : " is-placeholder"}${member.hasPhoto ? "" : " has-photo-fallback"}`;
 
     if (member.email) {
       card.href = `mailto:${member.email}`;

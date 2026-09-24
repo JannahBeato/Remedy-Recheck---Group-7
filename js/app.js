@@ -4,6 +4,7 @@ const { Application } = core;
 const {
   HeaderScrollState,
   MobileNavigation,
+  PublicMetrics,
   PrototypeTabs,
   RevealOnScroll,
   SectionNavigation,
@@ -12,6 +13,8 @@ const {
   YearStamp,
 } = components;
 const { prototypeViews, teamMembers, workflowSteps } = data;
+const { PublicCaseSummaryRepository } = global.RemedyRecheck.repositories;
+const { CaseMetrics } = global.RemedyRecheck.services;
 
 global.RemedyRecheck.Application = class RemedyRecheckApplication extends Application {
   constructor() {
@@ -21,6 +24,7 @@ global.RemedyRecheck.Application = class RemedyRecheckApplication extends Applic
       new SectionNavigation(),
       new WorkflowExplorer(workflowSteps),
       new PrototypeTabs(prototypeViews),
+      new PublicMetrics(new PublicCaseSummaryRepository(), new CaseMetrics()),
       new TeamDirectory(teamMembers),
       new YearStamp(),
       // Starts last so it also observes team cards created by TeamDirectory.

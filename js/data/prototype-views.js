@@ -3,8 +3,8 @@ const { data, models } = global.RemedyRecheck;
 const { PrototypeView } = models;
 
 data.prototypeViews = Object.freeze([
-  new PrototypeView({ id: "overview", title: "Follow-up overview" }),
-  new PrototypeView({ id: "requirements", title: "Data requirements" }),
-  new PrototypeView({ id: "guardrails", title: "Safety guardrails" }),
+  new PrototypeView({ id: "signin", title: "Protected sign-in" }),
+  new PrototypeView({ id: "review", title: "Due-date case review" }),
+  new PrototypeView({ id: "protection", title: "Data protection" }),
 ]);
 })(window);

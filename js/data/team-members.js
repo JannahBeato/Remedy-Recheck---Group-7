@@ -3,7 +3,7 @@ const { data, models } = global.RemedyRecheck;
 const { TeamMember } = models;
 
 data.teamMembers = Object.freeze([
-  new TeamMember({ name: "Hussam Badran Albasha", role: "Backend developer/Functional ideas", email: "badran@chalmers.se" }),
+  new TeamMember({ name: "Hussam Badran Albasha", role: "Backend developer/Functional ideas", email: "badran@chalmers.se", image: "images/team/Hussam.png" }),
   new TeamMember({ name: "Jannah Francine Rosales Beato", role: "The busy", email: "jannahf@chalmers.se" }),
   new TeamMember({ name: "Noel Elmquist", role: "Pollmaster/Organizer", email: "noelel@chalmers.se" }),
   new TeamMember({ name: "Olle Ackebjer", role: "The arms", email: "olleac@chalmers.se" }),

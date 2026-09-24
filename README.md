@@ -16,18 +16,20 @@ Then open `http://127.0.0.1:8765`.
 
 ## Data protection model
 
-The prototype presents operational supplier follow-up data for the Poland context. Case overviews use pseudonymous identifiers, worker identity data is separated from operational evidence, and access is limited by role. The product design also includes encrypted transfer and storage, an audit history, defined retention and deletion dates, and human review before a case can be closed.
+The working application presents operational supplier follow-up data for the Poland context. It demonstrates a sign-in gate, a session-based reviewer identity, pseudonymous case IDs, worker signals without names, persistent case updates, dated audit history, and human review before an outcome is saved.
+
+An IKEA deployment additionally requires organization-managed identity and server-side role permissions, encrypted transfer and storage, a protected backend, worker-identity records separated from operational evidence, controlled retention and deletion, backups, recovery, and centralized access logs.
 
 ## Project structure
 
-- `index.html`: Output 2, the project website explaining the problem, users, concept, team, video placeholder, sustainability dimensions, orders of effects, and references.
-- `app.html`: Output 1, the interactive RR supplier follow-up workspace hosted alongside the project website.
+- `index.html`: The project website explaining the problem, users, concept, team, video placeholder, sustainability dimensions, orders of effects, and references.
+- `app.html`: The interactive Remedy Recheck supplier follow-up workspace.
 - `js/app.js`: Composition root for the project website.
 - `js/remedy-recheck-app.js`: Composition root for the operational web app.
 - `js/core/`: Shared component lifecycle and application orchestration.
 - `js/models/`: Immutable domain objects for cases, rechecks, filters, workflow steps, prototype views, and team members.
 - `js/data/`: Editable project and supplier-case data kept separate from interface behaviour.
-- `js/repositories/`: Storage boundary with local persistence and a safe in-memory fallback.
+- `js/repositories/`: Storage boundaries for local persistence, session state, and the public read-only case summary.
 - `js/state/`: Observable application state and case selection/filtering.
 - `js/services/`: Focused metric and date-formatting services.
 - `js/components/`: Focused interface classes with one responsibility each.
@@ -35,7 +37,7 @@ The prototype presents operational supplier follow-up data for the Poland contex
 
 ## Add team members
 
-Add square photos under `images/team/`, then update the six entries in `js/data/team-members.js`. A member with both an image and email becomes a clickable card using a `mailto:` link, with the email also displayed beneath the name.
+Add square photos under `images/team/`, then update the six entries in `js/data/team-members.js`. Any member with an email has a clickable `mailto:` card. A supplied portrait replaces the initials fallback, while the email remains visible beneath the name.
 
 ## Use the working prototype
 

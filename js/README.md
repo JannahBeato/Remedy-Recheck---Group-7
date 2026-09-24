@@ -6,6 +6,7 @@ The website uses small namespaced classes and composition instead of one large c
 
 - Edit workflow wording in `data/workflow-steps.js`.
 - Edit prototype tab titles in `data/prototype-views.js`.
+- Edit the sanitized preview structure in `index.html`; operational case details must remain inside `app.html`.
 - Add team names, roles, email addresses, and photos in `data/team-members.js`.
 - Edit operational supplier cases in `data/supplier-cases.js`.
 - Add or change domain rules in `models/`.
@@ -28,3 +29,5 @@ The website uses small namespaced classes and composition instead of one large c
 Every component must continue to work when its target element is absent. The two pages use separate composition roots while sharing the same small lifecycle abstractions.
 
 The authentication shell starts the operational workspace only after a valid session is available. Authentication state uses `sessionStorage`; supplier case changes remain independently stored in `localStorage`.
+
+The project website reads only aggregate totals through `PublicCaseSummaryRepository` and `PublicMetrics`. It never initializes, rewrites, or renders operational case records. `CaseMetrics` accepts both domain objects and stored record snapshots so the metric definitions remain shared between the two pages.

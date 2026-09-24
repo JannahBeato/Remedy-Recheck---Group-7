@@ -12,7 +12,11 @@ models.TeamMember = class TeamMember {
   }
 
   get hasContactCard() {
-    return Boolean(this.email && this.image);
+    return Boolean(this.email);
+  }
+
+  get hasPhoto() {
+    return Boolean(this.image);
   }
 
   get initials() {
