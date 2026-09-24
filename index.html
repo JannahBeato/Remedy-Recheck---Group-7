@@ -3,76 +3,465 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Remedy Recheck</title>
-
+    <meta name="description" content="Remedy Recheck helps IKEA sustainability teams distinguish a supplier fix from a verified outcome.">
+    <meta name="theme-color" content="#102b25">
+    <title>Remedy Recheck | Supplier follow-up with a human outcome</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header>
-        <nav>
-            <h1>Remedy Recheck</h1>
-
-            <ul>
+    <header class="site-header" data-header>
+        <nav class="nav-shell" aria-label="Main navigation">
+            <a class="brand" href="#hero" aria-label="Remedy Recheck home">
+                <span class="brand-mark" aria-hidden="true">RR</span>
+                <span class="brand-copy"><span class="brand-name">Remedy Recheck</span><small>Project website</small></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-nav-toggle>
+                <span class="sr-only">Open navigation</span>
+                <span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links" data-nav-links>
                 <li><a href="#problem">Problem</a></li>
                 <li><a href="#solution">Solution</a></li>
-                <li><a href="#prototype">Prototype</a></li>
+                <li><a href="#technical">Development</a></li>
+                <li><a href="#sustainability">Sustainability</a></li>
                 <li><a href="#team">Team</a></li>
+                <li><a class="nav-app-link" href="app.html">Open web app <span aria-hidden="true">↗</span></a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
+        <section class="hero section-shell" id="hero">
+            <div class="hero-copy reveal">
+                <p class="eyebrow"><span></span> TEK830 · Challenge 4 · Poland</p>
+                <h1>A fix is only complete when the <em>outcome</em> is rechecked.</h1>
+                <p class="hero-lead">Remedy Recheck helps IKEA sustainability teams see what a supplier changed and, separately, whether the issue actually improved afterwards.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#solution">Explore the concept <span aria-hidden="true">↘</span></a>
+                    <a class="button button-secondary" href="app.html">Open web app</a>
+                </div>
+                <p class="research-note"><span aria-hidden="true">●</span> Poland supplier follow-up · Protected access</p>
+            </div>
 
-        <section id="hero">
-            <h2>Making supplier follow-up easier to understand</h2>
-            <p>
-                Remedy Recheck helps IKEA sustainability teams see what a supplier has fixed
-                and whether the issue actually improved afterwards.
-            </p>
+            <div class="hero-visual reveal" aria-label="Preview of the Remedy Recheck interface">
+                <div class="ambient-shape ambient-one"></div>
+                <div class="ambient-shape ambient-two"></div>
+                <div class="app-card">
+                    <div class="app-topbar">
+                        <div class="app-wordmark"><span class="mini-mark">RR</span><span>Follow-up overview</span></div>
+                        <span class="secure-pill"><span></span> Restricted access</span>
+                    </div>
+                    <div class="app-body">
+                        <div class="app-heading">
+                            <div><p>Supplier improvements</p><h2>Outcome overview</h2></div>
+                            <span class="data-pill">Poland · 8 active cases</span>
+                        </div>
+                        <div class="metric-grid">
+                            <article><span>Fixes recorded</span><strong>8</strong><small>100% of active cases</small></article>
+                            <article class="metric-accent"><span>Outcome rechecked</span><strong>6</strong><small>75% of active cases</small></article>
+                            <article><span>Need follow-up</span><strong>3</strong><small>Owner and due date set</small></article>
+                        </div>
+                        <div class="status-table" aria-hidden="true">
+                            <div class="status-head"><span>Issue</span><span>Fix</span><span>Outcome</span></div>
+                            <div class="empty-state"><span class="empty-icon">PL</span><strong>3 cases require a follow-up decision</strong><small>Next scheduled review: 30 September 2026</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="problem">
-            <h2>The Problem</h2>
-            <p>
-                Explain the problem here.
-            </p>
+        <section class="trust-strip" aria-label="Concept principles">
+            <div class="section-shell trust-grid">
+                <p><span>01</span> Different supplier issues</p>
+                <p><span>02</span> Human outcome visible</p>
+                <p><span>03</span> Protected worker data</p>
+                <p><span>04</span> Human decision-making</p>
+            </div>
         </section>
 
-        <section id="solution">
-            <h2>Our Solution</h2>
-            <p>
-                Explain the solution here.
-            </p>
+        <section class="output-section section-shell" aria-labelledby="output-title">
+            <div class="section-intro centered-intro reveal">
+                <p class="eyebrow"><span></span> Course delivery</p>
+                <h2 id="output-title">One destination, two clear purposes.</h2>
+                <p>Because our interactive prototype is a web app, the course clarification allows the app and project website to be hosted together. They remain visually and functionally distinct.</p>
+            </div>
+            <div class="output-map reveal">
+                <article class="output-card current-output">
+                    <span class="output-number">Output 2 · You are here</span>
+                    <h3>Project website</h3>
+                    <p>Explains the problem, target users, process, team, video demo, sustainability dimensions, orders of effects, and references.</p>
+                    <span class="output-status">Informational pages</span>
+                </article>
+                <div class="output-connector" aria-hidden="true"><span></span><strong>Same host</strong><span></span></div>
+                <article class="output-card app-output">
+                    <span class="output-number">Output 1 · Working prototype</span>
+                    <h3>Interactive web app</h3>
+                    <p>Lets users review supplier cases, record a result recheck, and keep unresolved outcomes visible.</p>
+                    <a class="button button-dark" href="app.html">Launch Remedy Recheck <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
         </section>
 
-        <section id="prototype">
-            <h2>Prototype</h2>
-            <p>
-                Prototype demonstration will go here.
-            </p>
+        <section class="content-section section-shell" id="problem">
+            <div class="section-intro reveal">
+                <p class="eyebrow"><span></span> The problem</p>
+                <h2>“Fix made” does not always mean “issue solved.”</h2>
+                <p>IKEA needs visibility into labour conditions, supplier risks, and improvement opportunities in Poland. A corrective action can be completed while its effect on workers remains unresolved or unclear.</p>
+            </div>
+            <div class="comparison-grid">
+                <article class="comparison-card muted-card reveal">
+                    <div class="card-number">01</div><p class="card-kicker">Implementation</p><h3>What changed?</h3>
+                    <p>The supplier records the agreed fix, its completion date, and supporting evidence.</p>
+                    <div class="status-label complete"><span></span> Fix made</div>
+                </article>
+                <div class="comparison-arrow reveal" aria-hidden="true">→</div>
+                <article class="comparison-card highlight-card reveal">
+                    <div class="card-number">02</div><p class="card-kicker">Outcome</p><h3>Did it improve?</h3>
+                    <p>An authorized recheck records the later result and keeps unresolved issues visible.</p>
+                    <div class="status-label pending"><span></span> Recheck required</div>
+                </article>
+            </div>
         </section>
 
-        <section id="team">
-            <h2>Our Team</h2>
-            <p>
-                Team members go here.
-            </p>
+        <section class="solution-section" id="solution">
+            <div class="section-shell">
+                <div class="section-intro light-intro reveal">
+                    <p class="eyebrow"><span></span> The solution</p>
+                    <h2>One clear path from action to outcome.</h2>
+                    <p>RR is a proposed web tool that adds a visible outcome checkpoint to supplier follow-up without replacing audits, complaint channels, or human judgement.</p>
+                </div>
+                <div class="workflow" data-workflow>
+                    <button class="workflow-step is-active" type="button" data-workflow-step="record" aria-pressed="true">
+                        <span class="step-index">01</span><span class="step-copy"><strong>Record the fix</strong><small>What changed, when, and what evidence supports it?</small></span>
+                    </button>
+                    <button class="workflow-step" type="button" data-workflow-step="recheck" aria-pressed="false">
+                        <span class="step-index">02</span><span class="step-copy"><strong>Recheck the result</strong><small>Improved, unresolved, or not yet safely verified?</small></span>
+                    </button>
+                    <button class="workflow-step" type="button" data-workflow-step="act" aria-pressed="false">
+                        <span class="step-index">03</span><span class="step-copy"><strong>Show the next action</strong><small>Who follows up, and by when?</small></span>
+                    </button>
+                </div>
+                <div class="workflow-detail reveal" data-workflow-detail>
+                    <div><p class="detail-label">Step 01 · Record the fix</p><h3>Implementation stays visible, but it is not treated as the final result.</h3></div>
+                    <p>RR records the issue category, agreed action, responsible owner, completion date, and supporting evidence for each supplier case.</p>
+                </div>
+            </div>
         </section>
 
+        <section class="technical-section section-shell" id="technical">
+            <div class="section-intro centered-intro reveal">
+                <p class="eyebrow"><span></span> Software development</p>
+                <h2>A focused decision-support tool.</h2>
+                <p>The capstone asks for working functionality, clear user value, and maintainable code. RR focuses on one core interaction: turning a completed corrective action into a reviewed outcome and next decision.</p>
+            </div>
+            <div class="technical-grid">
+                <article class="technical-card architecture-card reveal">
+                    <div class="technical-icon" aria-hidden="true">⌘</div>
+                    <p>Working implementation</p>
+                    <h3>Clear, maintainable components</h3>
+                    <ul>
+                        <li>Object-oriented JavaScript controllers</li>
+                        <li>Reusable case, outcome, and team components</li>
+                        <li>Project information and web app on one host</li>
+                    </ul>
+                </article>
+                <article class="technical-card privacy-card reveal">
+                    <div class="technical-icon" aria-hidden="true">◎</div>
+                    <p>Data protection</p>
+                    <h3>Protect people, not only records</h3>
+                    <ul>
+                        <li>Pseudonymous case IDs in reviewer screens</li>
+                        <li>Role-based access and an audit trail</li>
+                        <li>Worker identity stored separately from case evidence</li>
+                    </ul>
+                </article>
+                <article class="technical-card scale-card reveal">
+                    <div class="technical-icon" aria-hidden="true">↗</div>
+                    <p>Data-driven decisions</p>
+                    <h3>Information linked to action</h3>
+                    <ul>
+                        <li>Issue, fix, outcome, owner, and due date</li>
+                        <li>Unresolved cases remain visible</li>
+                        <li>Qualified reviewers keep decision authority</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="reflection-section" id="process">
+            <div class="section-shell">
+                <div class="section-intro centered-intro reveal">
+                    <p class="eyebrow"><span></span> User-centered design process</p>
+                    <h2>Research, prototype, test, and improve.</h2>
+                    <p>The course treats design thinking as a non-linear process. Findings from users and stakeholders can move the team back to an earlier stage at any time.</p>
+                </div>
+                <div class="reflection-grid">
+                    <article class="reflection-card reveal">
+                        <span class="reflection-icon" aria-hidden="true">◎</span>
+                        <div><p>01 · Empathize</p><h3>Understand the people and context</h3></div>
+                        <ul>
+                            <li>Primary user: Maria, Sustainability &amp; Compliance Manager</li>
+                            <li>Include supplier leads, workers, and representatives</li>
+                            <li>Study current follow-up decisions and information needs</li>
+                        </ul>
+                    </article>
+                    <article class="reflection-card reveal">
+                        <span class="reflection-icon" aria-hidden="true">⌁</span>
+                        <div><p>02 · Define</p><h3>Frame the decision problem</h3></div>
+                        <ul>
+                            <li>Completed action and improved outcome are different states</li>
+                            <li>Maria needs visibility across Polish supplier cases</li>
+                            <li>The problem is follow-up clarity, not a new complaint channel</li>
+                        </ul>
+                    </article>
+                    <article class="reflection-card reveal">
+                        <span class="reflection-icon" aria-hidden="true">◉</span>
+                        <div><p>03 · Ideate</p><h3>Compare possible responses</h3></div>
+                        <ul>
+                            <li>Explore digital and non-digital alternatives</li>
+                            <li>Select the smallest useful feature</li>
+                            <li>Keep worker safety and organizational value visible</li>
+                        </ul>
+                    </article>
+                    <article class="reflection-card reveal">
+                        <span class="reflection-icon" aria-hidden="true">↗</span>
+                        <div><p>04 · Prototype</p><h3>Make the recheck tangible</h3></div>
+                        <ul>
+                            <li>Open a supplier case and review the corrective action</li>
+                            <li>Record the outcome and its evidence</li>
+                            <li>Show the next owner and due date</li>
+                        </ul>
+                    </article>
+                    <article class="reflection-card process-card-wide reveal">
+                        <span class="reflection-icon" aria-hidden="true">↻</span>
+                        <div><p>05 · Test</p><h3>Observe use and iterate</h3></div>
+                        <ul>
+                            <li>Test whether users distinguish implementation from outcome</li>
+                            <li>Check whether privacy controls support safe participation</li>
+                            <li>Revise the problem, workflow, or feature when evidence requires it</li>
+                        </ul>
+                    </article>
+                </div>
+                <article class="validation-card reveal">
+                    <p>Research and feedback</p>
+                    <h3>Each test must inform a decision.</h3>
+                    <p>The team records whose experience was studied, what assumption was tested, what was observed, and whether the result means continue, revise, investigate further, or stop.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section section-shell users-section">
+            <div class="section-intro reveal"><p class="eyebrow"><span></span> People involved</p><h2>Built around decisions, not another dashboard.</h2></div>
+            <div class="people-grid">
+                <article class="person-card primary-person reveal">
+                    <div class="avatar" aria-hidden="true">M</div>
+                    <div><p>Primary user</p><h3>Maria</h3><span>IKEA Sustainability &amp; Compliance Manager</span></div>
+                    <blockquote>“Which issues still need attention, and who owns the next step?”</blockquote>
+                </article>
+                <article class="person-card reveal">
+                    <div class="icon-circle" aria-hidden="true">↗</div><p>Contributing role</p><h3>Supplier improvement lead</h3><span>Records the agreed fix and provides approved evidence.</span>
+                </article>
+                <article class="person-card reveal">
+                    <div class="icon-circle" aria-hidden="true">◎</div><p>Affected stakeholders</p><h3>Workers &amp; representatives</h3><span>Their perspective should inform outcomes through safe, approved routes.</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="prototype-section" id="prototype">
+            <div class="section-shell">
+                <div class="section-intro reveal">
+                    <p class="eyebrow"><span></span> Web app direction</p>
+                    <h2>A preview here. The working app next door.</h2>
+                    <p>This project page explains the solution and previews its interface. The interactive web app lives on its own page within the same hosted website.</p>
+                    <a class="inline-link" href="app.html">Open the working web app <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="prototype-frame reveal">
+                    <aside class="prototype-sidebar">
+                        <div class="prototype-brand"><span>RR</span><strong>Interface preview</strong></div>
+                        <nav aria-label="Prototype views">
+                            <button class="prototype-tab is-active" type="button" data-prototype-tab="overview"><span aria-hidden="true">⌂</span> Overview</button>
+                            <button class="prototype-tab" type="button" data-prototype-tab="requirements"><span aria-hidden="true">▤</span> Data requirements</button>
+                            <button class="prototype-tab" type="button" data-prototype-tab="guardrails"><span aria-hidden="true">◇</span> Guardrails</button>
+                        </nav>
+                        <div class="prototype-user"><span>M</span><div><strong>Maria</strong><small>Sustainability reviewer</small></div></div>
+                    </aside>
+                    <div class="prototype-main">
+                        <div class="prototype-toolbar">
+                            <div><small>Poland · Challenge 4</small><strong data-panel-title>Follow-up overview</strong></div>
+                            <span class="connection-state"><span></span> Protected access</span>
+                        </div>
+                        <div class="prototype-panel is-active" data-prototype-panel="overview">
+                            <div class="panel-message">
+                                <div class="panel-icon" aria-hidden="true">3</div><p class="card-kicker">Follow-up required</p>
+                                <h3>Three outcomes need a decision</h3>
+                                <p>Maria can review the corrective action, outcome evidence, responsible owner, and next due date without exposing worker names in the overview.</p>
+                                <button class="button button-dark" type="button" data-open-requirements>View required information</button>
+                            </div>
+                        </div>
+                        <div class="prototype-panel" data-prototype-panel="requirements">
+                            <p class="panel-overline">Proposed minimum fields</p><h3>Only the information needed for follow-up</h3>
+                            <div class="field-grid">
+                                <span>Issue category</span><span>Agreed fix</span><span>Responsible owner</span><span>Completion date</span>
+                                <span>Evidence summary</span><span>Outcome status</span><span>Next action</span><span>Recheck date</span>
+                            </div>
+                            <p class="panel-footnote">Personal identifiers are separated from operational case data and shown only to roles with a documented need.</p>
+                        </div>
+                        <div class="prototype-panel" data-prototype-panel="guardrails">
+                            <p class="panel-overline">Non-negotiable safeguards</p><h3>Human judgement stays in the process</h3>
+                            <ul class="guardrail-list">
+                                <li><span>01</span> No automatic case closure</li>
+                                <li><span>02</span> Role-based access with sign-in and audit history</li>
+                                <li><span>03</span> Worker identities kept outside the reviewer overview</li>
+                                <li><span>04</span> Encryption in transit and at rest</li>
+                                <li><span>05</span> Retention and deletion dates for every case</li>
+                                <li><span>06</span> “Not safely verified” remains a valid outcome</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section section-shell" id="sustainability">
+            <div class="section-intro reveal">
+                <p class="eyebrow"><span></span> Sustainability</p><h2>Social value first, with the full footprint in view.</h2>
+                <p>The Sustainability Awareness Framework asks the team to examine individual, social, economic, environmental, and technical effects together.</p>
+            </div>
+            <div class="dimension-grid">
+                <article class="dimension-card featured-dimension reveal"><span>Social</span><h3>Support fair treatment and worker voice</h3><p>Unresolved outcomes remain visible, while feedback routes are designed to reduce retaliation risk.</p></article>
+                <article class="dimension-card reveal"><span>Individual</span><h3>Protect agency, safety, and privacy</h3><p>Workers can contribute to an outcome check without having their identity displayed in the case overview.</p></article>
+                <article class="dimension-card reveal"><span>Economic</span><h3>Focus resources on unresolved cases</h3><p>Clear ownership and due dates reduce repeated follow-up and help teams direct effort where it is needed.</p></article>
+                <article class="dimension-card reveal"><span>Environmental</span><h3>Limit the ICT footprint</h3><p>The service uses existing devices, restrained storage, and defined retention periods for case evidence.</p></article>
+                <article class="dimension-card reveal"><span>Technical</span><h3>Keep the system secure and maintainable</h3><p>Access control, audit history, data quality checks, backups, and deletion rules support long-term use.</p></article>
+            </div>
+            <div class="effects-block">
+                <div class="effects-heading reveal">
+                    <p class="eyebrow"><span></span> Orders of effects</p>
+                    <h3>From the software itself to wider change.</h3>
+                </div>
+                <div class="effects-grid">
+                    <article class="effect-card reveal"><span>First order</span><h4>Immediate effects</h4><p>Building, hosting, storing, using, and eventually retiring RR require energy, equipment, maintenance, and staff time.</p></article>
+                    <article class="effect-card reveal"><span>Second order</span><h4>Enabling effects</h4><p>During use, Maria can identify unresolved outcomes sooner, assign ownership, and follow up before a case disappears from view.</p></article>
+                    <article class="effect-card reveal"><span>Third order</span><h4>Structural effects</h4><p>Repeated use can change expectations about supplier accountability, worker participation, and what counts as a completed remedy.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="ikea-section">
+            <div class="section-shell ikea-grid">
+                <div class="section-intro reveal"><p class="eyebrow"><span></span> Measuring improvement</p><h2>From supplier risk to measurable social impact.</h2><p>Challenge 4 asks IKEA to identify high-risk suppliers, monitor worker conditions, and measure social impact improvements. RR connects those goals to follow-up decisions.</p></div>
+                <ol class="needs-list reveal">
+                    <li><span>01</span><div><strong>Monitor the process</strong><p>Track overdue actions, completed fixes, outcome checks, repeat issues, and time to follow-up.</p></div></li>
+                    <li><span>02</span><div><strong>Monitor the human outcome</strong><p>Record whether conditions improved and whether the feedback route was understood, accessible, and safe.</p></div></li>
+                    <li><span>03</span><div><strong>Protect the people behind the data</strong><p>Minimize personal data, restrict access, log changes, set retention periods, and escalate retaliation concerns through qualified channels.</p></div></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="team-section section-shell" id="team">
+            <div class="section-intro centered-intro reveal">
+                <p class="eyebrow"><span></span> Our team</p>
+                <h2>Meet Group 7.</h2>
+                <p>Six students exploring how digital support could strengthen fair and responsible supplier follow-up.</p>
+            </div>
+            <div class="team-grid" data-team-grid aria-live="polite"></div>
+            <div class="team-institution reveal">
+                <div><small>Course project · TEK830</small><strong>Chalmers University of Technology</strong><span>Sustainable Digitalization in Practice</span></div>
+                <img src="images/chalmers-logo.png" alt="Chalmers University of Technology logo">
+            </div>
+        </section>
+
+        <section class="demo-section section-shell" id="demo">
+            <div class="demo-banner reveal">
+                <div class="demo-copy">
+                    <p class="eyebrow"><span></span> Video demonstration</p>
+                    <h2>See the workflow in action.</h2>
+                    <p>A recorded web-app walkthrough will be embedded here. The working prototype is available now for interactive review.</p>
+                </div>
+                <div class="demo-actions">
+                    <span class="demo-status">Video coming later</span>
+                    <a class="button button-light" href="app.html">Use the web app <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="references-section section-shell" id="references">
+            <div class="section-intro centered-intro reveal">
+                <p class="eyebrow"><span></span> References</p>
+                <h2>Course foundations for the project.</h2>
+                <p>The website structure, user-centered process, sustainability analysis, and project scope follow the material provided in TEK830.</p>
+            </div>
+            <div class="reference-grid">
+                <article class="reference-card reveal">
+                    <span>01 · Project brief</span>
+                    <h3>Capstone and Challenge 4</h3>
+                    <ul>
+                        <li>Capstone Project Instructions, 2026</li>
+                        <li>IKEA Challenge 4: Deliver a fair and just transition</li>
+                        <li>Poland and Maria as the selected context</li>
+                    </ul>
+                </article>
+                <article class="reference-card reveal">
+                    <span>02 · Lecture 2</span>
+                    <h3>Design thinking and user empathy</h3>
+                    <ul>
+                        <li>Empathize, Define, Ideate, Prototype, and Test</li>
+                        <li>Relevant users, realistic tasks, and iteration</li>
+                        <li>Human needs before preferred technology</li>
+                    </ul>
+                </article>
+                <article class="reference-card reveal">
+                    <span>03 · Lectures 3 and 4</span>
+                    <h3>ICT and sustainability design</h3>
+                    <ul>
+                        <li>ICT for Sustainability lecture material</li>
+                        <li>Sustainability Awareness Framework workbook</li>
+                        <li>Karlskrona Manifesto and sustainability requirements</li>
+                    </ul>
+                </article>
+            </div>
+            <article class="ai-disclosure reveal">
+                <div><span>AI</span><strong>Use in this project</strong></div>
+                <p>Generative AI has supported early wording, information structure, and front-end development. The team remains responsible for checking claims, revising the concept, documenting its own contribution, and following course rules.</p>
+            </article>
+        </section>
     </main>
 
-    <footer>
-        <p>TEK830 Sustainable Digitalization in Practice - Group 7</p>
-
-        <img src="images/chalmers-logo.png"
-         alt="Chalmers University of Technology logo"
-         class="chalmers-logo">
+    <footer class="site-footer">
+        <div class="section-shell footer-grid">
+            <div>
+                <a class="brand footer-brand" href="#hero"><span class="brand-mark" aria-hidden="true">RR</span><span class="brand-name">Remedy Recheck</span></a>
+                <p>A proposed human-centred approach to supplier follow-up.</p>
+            </div>
+            <div class="footer-course">
+                <p>TEK830 · Group 7 · <span data-year></span></p>
+                <img src="images/chalmers-logo.png" alt="Chalmers University of Technology logo" class="chalmers-logo">
+            </div>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script>
-
+    <script defer src="js/core/namespace.js"></script>
+    <script defer src="js/core/Component.js"></script>
+    <script defer src="js/core/Application.js"></script>
+    <script defer src="js/models/WorkflowStep.js"></script>
+    <script defer src="js/models/PrototypeView.js"></script>
+    <script defer src="js/models/TeamMember.js"></script>
+    <script defer src="js/data/workflow-steps.js"></script>
+    <script defer src="js/data/prototype-views.js"></script>
+    <script defer src="js/data/team-members.js"></script>
+    <script defer src="js/components/HeaderScrollState.js"></script>
+    <script defer src="js/components/MobileNavigation.js"></script>
+    <script defer src="js/components/SectionNavigation.js"></script>
+    <script defer src="js/components/RevealOnScroll.js"></script>
+    <script defer src="js/components/WorkflowDetailView.js"></script>
+    <script defer src="js/components/WorkflowExplorer.js"></script>
+    <script defer src="js/components/PrototypeTabs.js"></script>
+    <script defer src="js/components/TeamMemberCardView.js"></script>
+    <script defer src="js/components/TeamDirectory.js"></script>
+    <script defer src="js/components/YearStamp.js"></script>
+    <script defer src="js/app.js"></script>
 </body>
 </html>
