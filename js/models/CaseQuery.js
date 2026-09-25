@@ -6,6 +6,7 @@ models.CaseQuery = class CaseQuery {
     this.search = search.trim().toLowerCase();
     this.status = status;
     this.category = category;
+    Object.freeze(this);
   }
 
   apply(cases) {

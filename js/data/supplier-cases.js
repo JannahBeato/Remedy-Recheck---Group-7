@@ -22,7 +22,6 @@ data.supplierCases = [
     nextAction: "Review staffing capacity for the finishing unit and submit four consecutive compliant weekly reports.",
     nextOwner: "Supplier operations director",
     nextDueDate: "2026-10-09",
-    lastUpdated: "2026-09-18T13:42:00.000Z",
     auditTrail: [{ timestamp: "2026-09-18T13:42:00.000Z", actor: "Maria", action: "Outcome recorded as Unresolved" }],
   }),
   new SupplierCase({
@@ -44,7 +43,6 @@ data.supplierCases = [
     nextAction: "Continue monthly sampling and include temporary operators in refresher training.",
     nextOwner: "Supplier EHS manager",
     nextDueDate: "2026-10-15",
-    lastUpdated: "2026-09-12T09:15:00.000Z",
     auditTrail: [{ timestamp: "2026-09-12T09:15:00.000Z", actor: "Piotr Nowak", action: "Outcome recorded as Improved" }],
   }),
   new SupplierCase({
@@ -66,7 +64,6 @@ data.supplierCases = [
     nextAction: "Compare the September payroll sample with time records and confirm receipt through the protected feedback route.",
     nextOwner: "IKEA sustainability reviewer",
     nextDueDate: "2026-09-30",
-    lastUpdated: "2026-09-03T15:10:00.000Z",
     auditTrail: [{ timestamp: "2026-09-03T15:10:00.000Z", actor: "Anna Zielińska", action: "Corrective action marked complete" }],
   }),
   new SupplierCase({
@@ -88,7 +85,6 @@ data.supplierCases = [
     nextAction: "Arrange an independent off-site feedback session and monitor for retaliation indicators before reassessment.",
     nextOwner: "Regional responsible sourcing lead",
     nextDueDate: "2026-10-07",
-    lastUpdated: "2026-09-16T14:25:00.000Z",
     auditTrail: [{ timestamp: "2026-09-16T14:25:00.000Z", actor: "Maria", action: "Outcome recorded as Not safely verified" }],
   }),
   new SupplierCase({
@@ -110,7 +106,6 @@ data.supplierCases = [
     nextAction: "Repeat the sample when the next seasonal intake begins.",
     nextOwner: "Supplier people manager",
     nextDueDate: "2026-11-02",
-    lastUpdated: "2026-09-09T11:05:00.000Z",
     auditTrail: [{ timestamp: "2026-09-09T11:05:00.000Z", actor: "Anna Zielińska", action: "Outcome recorded as Improved" }],
   }),
   new SupplierCase({
@@ -132,7 +127,6 @@ data.supplierCases = [
     nextAction: "Balance the extraction system and complete independent measurements under full load.",
     nextOwner: "Supplier production manager",
     nextDueDate: "2026-10-04",
-    lastUpdated: "2026-09-20T10:32:00.000Z",
     auditTrail: [{ timestamp: "2026-09-20T10:32:00.000Z", actor: "Piotr Nowak", action: "Outcome recorded as Unresolved" }],
   }),
   new SupplierCase({
@@ -154,7 +148,6 @@ data.supplierCases = [
     nextAction: "Confirm understanding with a multilingual worker sample after onboarding.",
     nextOwner: "IKEA sustainability reviewer",
     nextDueDate: "2026-10-12",
-    lastUpdated: "2026-09-14T12:00:00.000Z",
     auditTrail: [{ timestamp: "2026-09-14T12:00:00.000Z", actor: "Katarzyna Wiśniewska", action: "Corrective action marked complete" }],
   }),
   new SupplierCase({
@@ -176,7 +169,6 @@ data.supplierCases = [
     nextAction: "Keep the rule active and review exceptions in the quarterly supplier meeting.",
     nextOwner: "Supplier logistics manager",
     nextDueDate: "2026-12-15",
-    lastUpdated: "2026-09-14T08:50:00.000Z",
     auditTrail: [{ timestamp: "2026-09-14T08:50:00.000Z", actor: "Anna Zielińska", action: "Outcome recorded as Improved" }],
   }),
 ];

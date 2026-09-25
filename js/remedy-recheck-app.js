@@ -24,7 +24,7 @@ global.RemedyRecheck.WorkspaceApplication = class WorkspaceApplication extends A
 
 document.addEventListener("DOMContentLoaded", () => {
   const sessionRepository = new repositories.SessionRepository();
-  const authService = new services.PrototypeAuthService(sessionRepository);
+  const authService = new services.AuthenticationService(sessionRepository);
   const authenticationShell = new components.AuthenticationShell(
     authService,
     () => new global.RemedyRecheck.WorkspaceApplication(),

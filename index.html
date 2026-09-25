@@ -26,7 +26,7 @@
                 <li><a href="#demo">Video demo</a></li>
                 <li><a href="#problem">Challenge</a></li>
                 <li><a href="#solution">Solution</a></li>
-                <li><a href="#prototype">Application</a></li>
+                <li><a href="#process">Process</a></li>
                 <li><a href="#sustainability">Sustainability</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a class="nav-app-link" href="app.html">Launch workspace <span aria-hidden="true">↗</span></a></li>
@@ -37,14 +37,12 @@
     <main id="main-content">
         <section class="hero section-shell" id="hero">
             <div class="hero-copy reveal">
-                <p class="eyebrow"><span></span> TEK830 · Challenge 4 · Poland</p>
                 <h1>A fix is only complete when the <em>outcome</em> is rechecked.</h1>
                 <p class="hero-lead">Remedy Recheck is a working web application that helps IKEA sustainability teams see what a supplier changed and, separately, whether conditions actually improved afterwards.</p>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="#solution">See how it works <span aria-hidden="true">↘</span></a>
+                    <a class="button button-primary" href="#process">Explore the process <span aria-hidden="true">↘</span></a>
                     <a class="button button-secondary" href="app.html">Open web app</a>
                 </div>
-                <p class="research-note"><span aria-hidden="true">●</span> Poland supplier follow-up · Protected workspace</p>
             </div>
 
             <div class="hero-visual reveal" aria-label="Live aggregate overview from Remedy Recheck">
@@ -75,24 +73,41 @@
             </div>
         </section>
 
-        <section class="trust-strip" aria-label="Remedy Recheck principles">
-            <div class="section-shell trust-grid">
-                <p><span>01</span> Corrective action recorded</p>
-                <p><span>02</span> Human outcome rechecked</p>
-                <p><span>03</span> Protected worker information</p>
-                <p><span>04</span> Human decision-making</p>
+        <section class="journey-strip" aria-labelledby="journey-title">
+            <div class="section-shell journey-shell">
+                <header class="journey-heading">
+                    <div><span>Outcome pathway</span><strong id="journey-title">From corrective action to an accountable next step</strong></div>
+                    <p><span aria-hidden="true">◇</span> Worker information stays protected throughout</p>
+                </header>
+                <ol class="journey-flow">
+                    <li>
+                        <span class="journey-node">01</span>
+                        <div><small>Record</small><strong>Corrective action</strong><p>Fix, owner, completion date, and evidence</p></div>
+                    </li>
+                    <li>
+                        <span class="journey-node">02</span>
+                        <div><small>Review</small><strong>Evidence safely</strong><p>Relevant information without worker names</p></div>
+                    </li>
+                    <li>
+                        <span class="journey-node">03</span>
+                        <div><small>Recheck</small><strong>Human outcome</strong><p>Improved, unresolved, or not safely verified</p></div>
+                    </li>
+                    <li>
+                        <span class="journey-node">04</span>
+                        <div><small>Assign</small><strong>Next decision</strong><p>Action, responsible owner, and due date</p></div>
+                    </li>
+                </ol>
             </div>
         </section>
 
         <section class="demo-section demo-early section-shell" id="demo">
+            <p class="eyebrow"><span></span> Video demonstration</p>
             <div class="demo-banner reveal">
                 <div class="demo-copy">
-                    <p class="eyebrow"><span></span> Video demonstration</p>
                     <h2>See the workflow in action.</h2>
                     <p>A recorded web-app walkthrough will be embedded here. The working application is available now for interactive review.</p>
                 </div>
                 <div class="demo-actions">
-                    <span class="demo-status">Video coming later</span>
                     <a class="button button-light" href="app.html">Use the web app <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
@@ -180,98 +195,49 @@
             </div>
         </section>
 
-        <section class="prototype-section" id="prototype">
-            <div class="section-shell">
-                <div class="section-intro reveal">
-                    <p class="eyebrow"><span></span> Working app preview</p>
-                    <h2>The real workflow, without exposing case details.</h2>
-                    <p>Explore the three parts of the current application below. Supplier names, evidence, worker signals, and audit records remain inside the protected workspace.</p>
-                    <a class="inline-link" href="app.html">Open the working web app <span aria-hidden="true">↗</span></a>
-                </div>
-
-                <div class="prototype-frame prototype-frame-aligned reveal">
-                    <div class="prototype-preview-header">
-                        <div class="prototype-brand"><span>RR</span><div><strong>Remedy Recheck</strong><small>Protected workspace preview</small></div></div>
-                        <span class="connection-state"><span></span> Aggregate view only</span>
-                    </div>
-                    <div class="prototype-tabs" role="tablist" aria-label="Working application preview">
-                        <button class="prototype-tab is-active" id="preview-tab-signin" type="button" role="tab" aria-controls="preview-panel-signin" aria-selected="true" data-prototype-tab="signin"><span aria-hidden="true">01</span> Sign in</button>
-                        <button class="prototype-tab" id="preview-tab-review" type="button" role="tab" aria-controls="preview-panel-review" aria-selected="false" tabindex="-1" data-prototype-tab="review"><span aria-hidden="true">02</span> Case review</button>
-                        <button class="prototype-tab" id="preview-tab-protection" type="button" role="tab" aria-controls="preview-panel-protection" aria-selected="false" tabindex="-1" data-prototype-tab="protection"><span aria-hidden="true">03</span> Data protection</button>
-                    </div>
-                    <div class="prototype-toolbar">
-                        <div><small>Poland · Challenge 4</small><strong data-panel-title>Protected sign-in</strong></div>
-                        <a class="prototype-open-link" href="app.html">Open full app <span aria-hidden="true">↗</span></a>
-                    </div>
-
-                    <div class="prototype-panel prototype-signin-panel is-active" id="preview-panel-signin" role="tabpanel" aria-labelledby="preview-tab-signin" data-prototype-panel="signin">
-                        <div class="preview-login-story">
-                            <p class="panel-overline">Authorized access</p>
-                            <h3>Case information appears only after sign-in.</h3>
-                            <p>The application starts with a dedicated authentication screen and creates a browser-session identity for Maria.</p>
-                            <ul>
-                                <li>Pseudonymous case records</li>
-                                <li>Human-controlled decisions</li>
-                                <li>Dated audit history</li>
-                            </ul>
-                        </div>
-                        <div class="preview-login-card">
-                            <p class="card-kicker">Demo access</p>
-                            <label><span>Email address</span><strong>maria@ikea.com</strong></label>
-                            <label><span>Password</span><strong>RemedyRecheck2026</strong></label>
-                            <a class="button button-primary" href="app.html">Sign in to workspace <span aria-hidden="true">→</span></a>
-                            <button class="preview-text-button" type="button" data-open-prototype="review">Preview the case workspace</button>
-                        </div>
-                    </div>
-
-                    <div class="prototype-panel prototype-review-panel" id="preview-panel-review" role="tabpanel" aria-labelledby="preview-tab-review" data-prototype-panel="review" hidden>
-                        <div class="preview-metric-grid" aria-label="Live aggregate case totals">
-                            <article><span>Active cases</span><strong data-public-metric="active">8</strong></article>
-                            <article><span>Fixes recorded</span><strong data-public-metric="fixesRecorded">8</strong></article>
-                            <article><span>Outcomes rechecked</span><strong data-public-metric="rechecked">6</strong></article>
-                            <article><span>Need follow-up</span><strong data-public-metric="needsFollowUp">3</strong></article>
-                        </div>
-                        <div class="preview-workspace">
-                            <div class="preview-queue">
-                                <header><strong>Due-date order</strong><small>Earliest first</small></header>
-                                <div class="is-selected"><span><strong>30 Sep</strong><small>Recheck due</small></span><span aria-hidden="true">→</span></div>
-                                <div><span><strong>04 Oct</strong><small>Unresolved</small></span><span aria-hidden="true">→</span></div>
-                                <div><span><strong>07 Oct</strong><small>Not safely verified</small></span><span aria-hidden="true">→</span></div>
-                            </div>
-                            <div class="preview-case-detail">
-                                <div class="preview-case-heading"><div><small>Protected case selected</small><h3>Outcome review</h3></div><span>Recheck due</span></div>
-                                <div class="preview-process-row"><span><strong>1</strong> Review the fix</span><span><strong>2</strong> Record the outcome</span><span><strong>3</strong> Set owner and date</span></div>
-                                <p>Authorized reviewers compare the completed action with later evidence, then save a human decision and the next step.</p>
-                                <div class="preview-statuses"><span>Improved</span><span>Unresolved</span><span>Not safely verified</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="prototype-panel prototype-protection-panel" id="preview-panel-protection" role="tabpanel" aria-labelledby="preview-tab-protection" data-prototype-panel="protection" hidden>
-                        <div class="preview-protection-intro"><p class="panel-overline">Protected by design</p><h3>Only the information needed for follow-up.</h3><p>The reviewer interface uses pseudonymous case IDs and keeps worker names out of the operational overview.</p></div>
-                        <div class="preview-protection-grid">
-                            <article><span>Now</span><h4>Working application</h4><ul><li>Sign-in before case rendering</li><li>Session-based reviewer identity</li><li>Audit history for outcome changes</li><li>No worker names in the case overview</li></ul></article>
-                            <article><span>Deployment</span><h4>IKEA safeguards</h4><ul><li>Identity provider and role permissions</li><li>Encrypted protected backend</li><li>Separated identity records</li><li>Retention, deletion, backup, and access logs</li></ul></article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="reflection-section" id="process">
+        <section class="reflection-section process-feature" id="process">
             <div class="section-shell">
                 <div class="section-intro centered-intro reveal">
                     <p class="eyebrow"><span></span> User-centered development</p>
                     <h2>Research, prototype, test, and improve.</h2>
                     <p>The design-thinking process is non-linear. New evidence can move the team back to an earlier stage whenever assumptions need to be reconsidered.</p>
                 </div>
-                <div class="process-timeline">
-                    <article class="process-step reveal"><span>01</span><div><p>Empathize</p><h3>Understand people and context</h3><small>Study reviewer decisions, supplier responsibilities, and safe worker participation.</small></div></article>
-                    <article class="process-step reveal"><span>02</span><div><p>Define</p><h3>Separate fix from outcome</h3><small>Frame follow-up clarity as the core decision problem.</small></div></article>
-                    <article class="process-step reveal"><span>03</span><div><p>Ideate</p><h3>Compare possible responses</h3><small>Choose the smallest useful feature without replacing existing channels.</small></div></article>
-                    <article class="process-step reveal"><span>04</span><div><p>Prototype</p><h3>Make the recheck tangible</h3><small>Connect the action, evidence, outcome, owner, and next due date.</small></div></article>
-                    <article class="process-step reveal"><span>05</span><div><p>Test</p><h3>Observe and revise</h3><small>Check understanding, usefulness, privacy, and unintended effects.</small></div></article>
+
+                <div class="process-route-wrap">
+                    <svg class="process-route-line" viewBox="0 0 1000 420" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                        <defs>
+                            <marker id="process-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+                                <path d="M 0 0 L 10 5 L 0 10 z"></path>
+                            </marker>
+                        </defs>
+                        <path class="process-path" d="M 8 270 H 200 V 150 H 400 V 270 H 600 V 150 H 800 V 270 H 982" marker-end="url(#process-arrow)"></path>
+                        <rect class="process-start" x="3" y="265" width="10" height="10" rx="2"></rect>
+                    </svg>
+
+                    <ol class="process-route" aria-label="Remedy Recheck design-thinking process">
+                        <li class="process-step reveal">
+                            <div class="process-marker" aria-hidden="true"><span>01</span></div>
+                            <div class="process-note"><p><span>01</span> Empathize</p><h3>Understand people and context</h3><small>Study reviewer decisions, supplier responsibilities, and safe worker participation.</small></div>
+                        </li>
+                        <li class="process-step reveal">
+                            <div class="process-marker" aria-hidden="true"><span>02</span></div>
+                            <div class="process-note"><p><span>02</span> Define</p><h3>Separate fix from outcome</h3><small>Frame follow-up clarity as the core decision problem.</small></div>
+                        </li>
+                        <li class="process-step reveal">
+                            <div class="process-marker" aria-hidden="true"><span>03</span></div>
+                            <div class="process-note"><p><span>03</span> Ideate</p><h3>Compare possible responses</h3><small>Choose the smallest useful feature without replacing existing channels.</small></div>
+                        </li>
+                        <li class="process-step reveal">
+                            <div class="process-marker" aria-hidden="true"><span>04</span></div>
+                            <div class="process-note"><p><span>04</span> Prototype</p><h3>Make the recheck tangible</h3><small>Connect the action, evidence, outcome, owner, and next due date.</small></div>
+                        </li>
+                        <li class="process-step reveal">
+                            <div class="process-marker" aria-hidden="true"><span>05</span></div>
+                            <div class="process-note"><p><span>05</span> Test</p><h3>Observe and revise</h3><small>Check understanding, usefulness, privacy, and unintended effects.</small></div>
+                        </li>
+                    </ol>
                 </div>
+
                 <article class="validation-card validation-card-compact reveal">
                     <p>Research and feedback</p>
                     <h3>Each test must inform a decision.</h3>
@@ -345,12 +311,9 @@
     </main>
 
     <footer class="site-footer">
-        <div class="section-shell footer-grid">
-            <div>
-                <a class="brand footer-brand" href="#hero"><span class="brand-mark" aria-hidden="true">RR</span><span class="brand-name">Remedy Recheck</span></a>
-                <p>A working human-centered approach to supplier follow-up.</p>
-            </div>
-            <div class="footer-course"><p>TEK830 · Group 7 · <span data-year></span></p><img src="images/chalmers-logo.png" alt="Chalmers University of Technology logo" class="chalmers-logo"></div>
+        <div class="section-shell footer-simple">
+            <p>© <span data-year></span> Remedy Recheck Project <span aria-hidden="true">—</span> Chalmers University of Technology</p>
+            <img src="images/chalmers-logo.png" alt="Chalmers University of Technology" class="footer-chalmers-logo">
         </div>
     </footer>
 
@@ -358,10 +321,8 @@
     <script defer src="js/core/Component.js"></script>
     <script defer src="js/core/Application.js"></script>
     <script defer src="js/models/WorkflowStep.js"></script>
-    <script defer src="js/models/PrototypeView.js"></script>
     <script defer src="js/models/TeamMember.js"></script>
     <script defer src="js/data/workflow-steps.js"></script>
-    <script defer src="js/data/prototype-views.js"></script>
     <script defer src="js/data/team-members.js"></script>
     <script defer src="js/repositories/PublicCaseSummaryRepository.js"></script>
     <script defer src="js/services/CaseMetrics.js"></script>
@@ -371,7 +332,6 @@
     <script defer src="js/components/RevealOnScroll.js"></script>
     <script defer src="js/components/WorkflowDetailView.js"></script>
     <script defer src="js/components/WorkflowExplorer.js"></script>
-    <script defer src="js/components/PrototypeTabs.js"></script>
     <script defer src="js/components/PublicMetrics.js"></script>
     <script defer src="js/components/TeamMemberCardView.js"></script>
     <script defer src="js/components/TeamDirectory.js"></script>

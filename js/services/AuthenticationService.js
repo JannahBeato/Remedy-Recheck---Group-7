@@ -1,4 +1,4 @@
-(function registerPrototypeAuthService(global) {
+(function registerAuthenticationService(global) {
 const { models, services } = global.RemedyRecheck;
 const { AuthUser } = models;
 
@@ -14,16 +14,13 @@ const ACCOUNT = Object.freeze({
   }),
 });
 
-services.PrototypeAuthService = class PrototypeAuthService {
+services.AuthenticationService = class AuthenticationService {
   constructor(sessionRepository) {
     this.sessionRepository = sessionRepository;
   }
 
   signIn(email, password) {
-    const normalizedEmail = String(email || "").trim().toLowerCase();
-    if (normalizedEmail !== ACCOUNT.email || String(password || "") !== ACCOUNT.password) {
-      return null;
-    }
+    if (!this.credentialsMatch(email, password)) return null;
 
     const user = new AuthUser(ACCOUNT.user);
     this.sessionRepository.save(user);
@@ -32,12 +29,7 @@ services.PrototypeAuthService = class PrototypeAuthService {
 
   currentUser() {
     const session = this.sessionRepository.get();
-    const isValid = session
-      && session.id === ACCOUNT.user.id
-      && session.email === ACCOUNT.user.email
-      && session.sessionVersion === ACCOUNT.user.sessionVersion;
-
-    if (!isValid) {
+    if (!this.isCurrentSession(session)) {
       this.sessionRepository.clear();
       return null;
     }
@@ -52,6 +44,20 @@ services.PrototypeAuthService = class PrototypeAuthService {
 
   signOut() {
     this.sessionRepository.clear();
+  }
+
+  credentialsMatch(email, password) {
+    return String(email || "").trim().toLowerCase() === ACCOUNT.email
+      && String(password || "") === ACCOUNT.password;
+  }
+
+  isCurrentSession(session) {
+    return Boolean(
+      session
+      && session.id === ACCOUNT.user.id
+      && session.email === ACCOUNT.user.email
+      && session.sessionVersion === ACCOUNT.user.sessionVersion,
+    );
   }
 };
 })(window);

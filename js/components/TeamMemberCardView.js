@@ -3,19 +3,16 @@ const { components } = global.RemedyRecheck;
 
 components.TeamMemberCardView = class TeamMemberCardView {
   render(member) {
-    const card = document.createElement(member.email ? "a" : "article");
-    card.className = `team-card reveal${member.hasContactCard ? "" : " is-placeholder"}${member.hasPhoto ? "" : " has-photo-fallback"}`;
-
-    if (member.email) {
-      card.href = `mailto:${member.email}`;
-      card.setAttribute("aria-label", `Email ${member.name} at ${member.email}`);
-    }
+    const card = document.createElement("a");
+    card.className = `team-card reveal${member.hasPhoto ? "" : " has-photo-fallback"}`;
+    card.href = `mailto:${member.email}`;
+    card.setAttribute("aria-label", `Email ${member.name} at ${member.email}`);
 
     card.append(
       this.createPhoto(member),
       this.createTextElement("h3", "", member.name),
       this.createTextElement("span", "team-role", member.role),
-      this.createTextElement("small", "team-email", member.email || "Photo and email to be added"),
+      this.createTextElement("small", "team-email", member.email),
     );
 
     return card;

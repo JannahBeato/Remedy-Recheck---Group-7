@@ -1,6 +1,6 @@
 # Remedy Recheck-Group 7
 
-Project website and working web-app prototype for **TEK830 Sustainable Digitalization in Practice** at Chalmers University of Technology.
+Project website and working web application for **TEK830 Sustainable Digitalization in Practice** at Chalmers University of Technology.
 
 Remedy Recheck (RR) explores how IKEA sustainability teams could keep two supplier follow-up states separate: **a fix was made** and **the issue improved afterwards**.
 
@@ -27,7 +27,7 @@ An IKEA deployment additionally requires organization-managed identity and serve
 - `js/app.js`: Composition root for the project website.
 - `js/remedy-recheck-app.js`: Composition root for the operational web app.
 - `js/core/`: Shared component lifecycle and application orchestration.
-- `js/models/`: Immutable domain objects for cases, rechecks, filters, workflow steps, prototype views, and team members.
+- `js/models/`: Domain objects for cases, rechecks, filters, workflow steps, authenticated users, and team members.
 - `js/data/`: Editable project and supplier-case data kept separate from interface behaviour.
 - `js/repositories/`: Storage boundaries for local persistence, session state, and the public read-only case summary.
 - `js/state/`: Observable application state and case selection/filtering.
@@ -39,7 +39,7 @@ An IKEA deployment additionally requires organization-managed identity and serve
 
 Add square photos under `images/team/`, then update the six entries in `js/data/team-members.js`. Any member with an email has a clickable `mailto:` card. A supplied portrait replaces the initials fallback, while the email remains visible beneath the name.
 
-## Use the working prototype
+## Use the working application
 
 Open `app.html` and sign in with the course demonstration account:
 

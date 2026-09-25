@@ -5,14 +5,13 @@ const {
   HeaderScrollState,
   MobileNavigation,
   PublicMetrics,
-  PrototypeTabs,
   RevealOnScroll,
   SectionNavigation,
   TeamDirectory,
   WorkflowExplorer,
   YearStamp,
 } = components;
-const { prototypeViews, teamMembers, workflowSteps } = data;
+const { teamMembers, workflowSteps } = data;
 const { PublicCaseSummaryRepository } = global.RemedyRecheck.repositories;
 const { CaseMetrics } = global.RemedyRecheck.services;
 
@@ -23,7 +22,6 @@ global.RemedyRecheck.Application = class RemedyRecheckApplication extends Applic
       new MobileNavigation(),
       new SectionNavigation(),
       new WorkflowExplorer(workflowSteps),
-      new PrototypeTabs(prototypeViews),
       new PublicMetrics(new PublicCaseSummaryRepository(), new CaseMetrics()),
       new TeamDirectory(teamMembers),
       new YearStamp(),

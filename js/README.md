@@ -5,8 +5,7 @@ The website uses small namespaced classes and composition instead of one large c
 ## Where to make common changes
 
 - Edit workflow wording in `data/workflow-steps.js`.
-- Edit prototype tab titles in `data/prototype-views.js`.
-- Edit the sanitized preview structure in `index.html`; operational case details must remain inside `app.html`.
+- Edit public project explanations in `index.html`; operational case details must remain inside `app.html`.
 - Add team names, roles, email addresses, and photos in `data/team-members.js`.
 - Edit operational supplier cases in `data/supplier-cases.js`.
 - Add or change domain rules in `models/`.
@@ -22,7 +21,7 @@ The website uses small namespaced classes and composition instead of one large c
 - `repositories/` owns browser persistence, session storage, data rehydration, and small migrations.
 - `state/` owns filtering, selection, updates, and subscriber notifications.
 - `services/` contains authentication, reusable calculations, and formatting.
-- `components/` contains one interface responsibility per class.
+- `components/` contains one interface responsibility per class. Controllers subscribe to state; focused view classes create presentation markup.
 - `core/namespace.js` creates the single `window.RemedyRecheck` namespace used by the class files.
 - `app.js` and `remedy-recheck-app.js` are composition roots and contain no feature logic.
 

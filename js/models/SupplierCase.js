@@ -46,9 +46,11 @@ models.SupplierCase = class SupplierCase {
       nextAction: details.nextAction || "",
       nextOwner: details.nextOwner || "",
       nextDueDate: details.nextDueDate || "",
-      lastUpdated: details.lastUpdated,
       auditTrail: [...(details.auditTrail || [])],
     });
+    this.auditTrail.forEach((entry) => Object.freeze(entry));
+    Object.freeze(this.auditTrail);
+    Object.freeze(this);
   }
 
   get statusLabel() {
@@ -88,7 +90,6 @@ models.SupplierCase = class SupplierCase {
       nextAction: record.nextAction,
       nextOwner: record.nextOwner,
       nextDueDate: record.nextDueDate,
-      lastUpdated: timestamp,
       auditTrail: [
         ...this.auditTrail,
         {
@@ -120,7 +121,6 @@ models.SupplierCase = class SupplierCase {
       nextAction: this.nextAction,
       nextOwner: this.nextOwner,
       nextDueDate: this.nextDueDate,
-      lastUpdated: this.lastUpdated,
       auditTrail: [...this.auditTrail],
     };
   }

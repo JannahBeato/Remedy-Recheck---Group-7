@@ -36,6 +36,7 @@ models.RecheckRecord = class RecheckRecord {
       nextDueDate: fields.nextDueDate,
       timestamp: new Date().toISOString(),
     });
+    Object.freeze(this);
   }
 };
 })(window);

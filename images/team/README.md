@@ -8,4 +8,4 @@ Then update the `teamMembers` entries in `js/data/team-members.js` with each per
 - `email`
 - `image`, for example `images/team/firstname-lastname.jpg`
 
-The website automatically makes a completed team card clickable with a `mailto:` link and prints the same email in fine text below the name. If a photo or email is missing, the card shows an honest placeholder instead of a broken link.
+The website makes every team card clickable with a `mailto:` link and prints the same email in fine text below the name. A missing photo uses the member's initials without affecting the email link.
