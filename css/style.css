@@ -1295,10 +1295,11 @@ a.team-card:hover {
 }
 
 .reference-card ul {
-  color: var(--ink-soft);
-  font-size: 0.75rem;
-  list-style-position: inside;
-  margin-top: 1.1rem;
+    color: var(--ink-soft);
+    font-size: 0.75rem;
+    list-style-position: outside;
+    margin-top: 1.1rem;
+    padding-left: 1.1rem;
 }
 
 .reference-card li + li {
@@ -1308,6 +1309,7 @@ a.team-card:hover {
 .reference-card a {
   color: var(--forest-2);
   font-weight: 650;
+  
 }
 
 .reference-card a:hover {
