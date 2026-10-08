@@ -971,49 +971,35 @@ img {
 }
 
 .dimension-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(6, 1fr);
-  margin-top: 4rem;
+  border-top: 1px solid var(--line);
+  margin-top: 3rem;
 }
 
 .dimension-card {
-  background: var(--cream);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  grid-column: span 2;
-  min-height: 240px;
-  padding: 1.5rem;
-}
-
-.dimension-card:nth-child(4),
-.dimension-card:nth-child(5) {
-  grid-column: span 3;
+  border-bottom: 1px solid var(--line);
+  column-gap: 2rem;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  padding: 1.4rem 0;
 }
 
 .dimension-card > span {
   color: var(--forest-2);
-  font-size: 0.67rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  grid-row: 1 / span 2;
 }
 
 .dimension-card h3 {
-  font-size: 1.3rem;
-  letter-spacing: -0.03em;
-  line-height: 1.2;
-  margin-top: 1.2rem;
+  font-size: 1.15rem;
+  line-height: 1.3;
 }
 
 .dimension-card p {
   color: var(--ink-soft);
-  font-size: 0.86rem;
-  margin-top: 0.7rem;
-}
-
-.featured-dimension {
-  background: var(--mint);
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+  max-width: 680px;
 }
 
 .effects-block {
@@ -1050,10 +1036,8 @@ img {
 
 .effect-card > span {
   color: var(--forest-2);
-  font-size: 0.66rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 .effect-card h4 {
@@ -1626,14 +1610,13 @@ a.team-card:hover {
     grid-column: auto;
   }
 
-  .dimension-grid {
+  .dimension-card {
     grid-template-columns: 1fr;
   }
 
-  .dimension-card,
-  .dimension-card:nth-child(4),
-  .dimension-card:nth-child(5) {
-    grid-column: auto;
+  .dimension-card > span {
+    grid-row: auto;
+    margin-bottom: 0.3rem;
   }
 
   .team-grid {
