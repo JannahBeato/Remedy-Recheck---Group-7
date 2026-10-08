@@ -1126,6 +1126,17 @@ a.team-card:hover {
   width: 90px;
 }
 
+.team-photo-zoomed {
+  overflow: hidden;
+}
+
+.team-photo-zoomed img {
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
 .team-card h3 {
   font-size: 1.02rem;
   letter-spacing: -0.02em;

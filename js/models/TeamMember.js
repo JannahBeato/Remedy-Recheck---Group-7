@@ -2,7 +2,7 @@
 const { models } = global.RemedyRecheck;
 
 models.TeamMember = class TeamMember {
-  constructor({ name, role, email, image = "" }) {
+  constructor({ name, role, email, image = "", imageZoom = 1 }) {
     if (!name || !role || !email) {
       throw new TypeError("TeamMember requires a name, role, and email.");
     }
@@ -10,6 +10,7 @@ models.TeamMember = class TeamMember {
     this.role = role;
     this.email = email;
     this.image = image;
+    this.imageZoom = imageZoom;
     Object.freeze(this);
   }
 
