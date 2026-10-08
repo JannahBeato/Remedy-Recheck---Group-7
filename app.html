@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Remedy Recheck protected supplier outcome follow-up workspace for Poland.">
+    <meta name="theme-color" content="#102b25">
+    <title>Remedy Recheck | Supplier follow-up workspace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="rr-application-page">
+    <main class="rr-login-view" data-login-view id="login-main">
+        <section class="rr-login-story" aria-labelledby="login-story-title">
+            <a class="brand rr-login-brand" href="index.html" aria-label="Remedy Recheck project website">
+                <span class="brand-mark" aria-hidden="true">RR</span>
+                <span class="brand-copy"><span class="brand-name">Remedy Recheck</span><small>Protected workspace</small></span>
+            </a>
+            <div class="rr-login-story-copy">
+                <p class="eyebrow"><span></span> Supplier follow-up · Poland</p>
+                <h1 id="login-story-title">A fix is only complete when the outcome is rechecked.</h1>
+                <p>Review corrective actions, record what changed for workers, and keep every unresolved outcome connected to a clear next decision.</p>
+                <ul class="rr-login-principles" aria-label="Workspace principles">
+                    <li><span aria-hidden="true">01</span> Pseudonymous case records</li>
+                    <li><span aria-hidden="true">02</span> Human-controlled decisions</li>
+                    <li><span aria-hidden="true">03</span> Dated audit history</li>
+                </ul>
+            </div>
+            <a class="rr-login-site-link" href="index.html">← Return to the project website</a>
+        </section>
+
+        <section class="rr-login-panel" aria-labelledby="login-title">
+            <div class="rr-login-card">
+                <span class="rr-login-lock" aria-hidden="true">◇</span>
+                <p class="rr-section-label">Authorized access</p>
+                <h2 id="login-title">Sign in to continue</h2>
+                <p class="rr-login-intro">Use your assigned account to enter the Remedy Recheck workspace.</p>
+
+                <form class="rr-login-form" data-login-form>
+                    <label>
+                        <span>Email address</span>
+                        <input type="email" name="email" autocomplete="username" spellcheck="false" required data-login-email>
+                    </label>
+                    <label>
+                        <span>Password</span>
+                        <span class="rr-password-field">
+                            <input type="password" name="password" autocomplete="current-password" required data-login-password>
+                            <button type="button" aria-pressed="false" data-password-toggle>Show</button>
+                        </span>
+                    </label>
+                    <p class="rr-login-error" data-login-error role="alert" aria-live="polite"></p>
+                    <button class="button button-primary rr-login-submit" type="submit">Sign in to workspace <span aria-hidden="true">→</span></button>
+                </form>
+
+                <aside class="rr-demo-access" aria-label="Demonstration account">
+                    <div><span aria-hidden="true">i</span><strong>Demo access</strong></div>
+                    <dl>
+                        <div><dt>Email</dt><dd>maria@ikea.com</dd></div>
+                        <div><dt>Password</dt><dd>RemedyRecheck2026</dd></div>
+                    </dl>
+                </aside>
+                <p class="rr-login-footnote"><span aria-hidden="true">●</span> Your session ends when you sign out or close the browser session.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="rr-workspace-view" data-workspace-view hidden>
+        <a class="skip-link" href="#workspace-main">Skip to workspace</a>
+
+        <header class="rr-app-header">
+            <a class="brand" href="app.html" aria-label="Remedy Recheck workspace home">
+                <span class="brand-mark" aria-hidden="true">RR</span>
+                <span class="brand-copy"><span class="brand-name">Remedy Recheck</span><small>Protected workspace</small></span>
+            </a>
+            <div class="rr-header-actions">
+                <button class="rr-header-control" type="button" data-protection-open>
+                    <span aria-hidden="true">◇</span><span class="rr-control-label">Data protection</span>
+                </button>
+                <a class="rr-header-control" href="index.html">
+                    <span aria-hidden="true">↗</span><span class="rr-project-label">Project website</span>
+                </a>
+                <span class="rr-current-user">
+                    <span aria-hidden="true">M</span>
+                    <span><strong data-auth-user-name>Maria</strong><small data-auth-user-role>Sustainability reviewer</small></span>
+                </span>
+                <button class="rr-sign-out" type="button" data-sign-out>Sign out</button>
+            </div>
+        </header>
+
+        <main class="rr-workspace" id="workspace-main">
+            <section class="rr-workspace-heading" id="overview" tabindex="-1" data-workspace-heading>
+                <div>
+                    <p class="eyebrow"><span></span> Poland supplier follow-up</p>
+                    <h1>Outcome overview</h1>
+                    <p>Separate a completed corrective action from the later result, then keep the next decision visible.</p>
+                </div>
+                <div class="rr-workspace-date"><span>Review cycle</span><strong>September 2026</strong></div>
+            </section>
+
+            <section class="rr-metrics" data-app-metrics aria-label="Case overview metrics"></section>
+
+            <section class="rr-case-area" id="cases" aria-labelledby="case-area-title">
+                <header class="rr-case-area-heading">
+                    <div><p class="rr-section-label">Operational review</p><h2 id="case-area-title">Active supplier cases</h2></div>
+                    <p>Choose a case, compare the fix with the outcome, and record the next action.</p>
+                </header>
+
+                <div class="rr-filters" aria-label="Filter supplier cases">
+                    <label class="rr-search-field">
+                        <span>Search cases</span>
+                        <input type="search" placeholder="Case ID, supplier, location…" data-case-search>
+                    </label>
+                    <label>
+                        <span>Outcome status</span>
+                        <select data-status-filter>
+                            <option value="all">All statuses</option>
+                            <option value="follow_up">Needs follow-up</option>
+                            <option value="improved">Improved</option>
+                            <option value="unresolved">Unresolved</option>
+                            <option value="not_safely_verified">Not safely verified</option>
+                            <option value="recheck_due">Recheck due</option>
+                            <option value="action_recorded">Action recorded</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>Issue category</span>
+                        <select data-category-filter><option value="all">All categories</option></select>
+                    </label>
+                </div>
+
+                <div class="rr-case-workspace">
+                    <section class="rr-case-list-panel" aria-label="Supplier case list">
+                        <header><strong>Cases</strong><span data-case-count>0 cases</span></header>
+                        <div class="rr-case-list" data-case-list></div>
+                    </section>
+                    <article class="rr-case-detail" data-case-detail aria-live="polite"></article>
+                </div>
+            </section>
+        </main>
+
+        <dialog class="rr-dialog" data-recheck-dialog aria-labelledby="recheck-title">
+            <form method="dialog" data-recheck-form>
+                <input type="hidden" name="caseId">
+                <header class="rr-dialog-header">
+                    <div><p data-dialog-case>Supplier case</p><h2 id="recheck-title">Record outcome recheck</h2></div>
+                    <button type="button" class="rr-dialog-close" data-dialog-cancel aria-label="Close dialog">×</button>
+                </header>
+                <p class="rr-dialog-intro">Record the later result separately from the supplier's completed action. A case is never closed automatically.</p>
+
+                <div class="rr-form-grid">
+                    <label><span>Outcome status</span><select name="status" required><option value="">Choose outcome</option><option value="improved">Improved</option><option value="unresolved">Unresolved</option><option value="not_safely_verified">Not safely verified</option></select></label>
+                    <label><span>Recheck date</span><input type="date" name="recheckDate" required></label>
+                    <label class="rr-form-wide"><span>Evidence summary</span><textarea name="evidenceSummary" rows="3" required></textarea><small>State what was checked and what the evidence shows.</small></label>
+                    <label class="rr-form-wide"><span>Protected worker feedback summary</span><textarea name="workerFeedback" rows="3" required></textarea><small>Do not enter names or details that can identify a worker.</small></label>
+                    <label><span>Reviewer</span><input type="text" name="reviewer" required></label>
+                    <label><span>Next owner</span><input type="text" name="nextOwner" required></label>
+                    <label class="rr-form-wide"><span>Next action</span><textarea name="nextAction" rows="2" required></textarea></label>
+                    <label><span>Next due date</span><input type="date" name="nextDueDate" required></label>
+                </div>
+
+                <p class="rr-form-error" data-form-error role="alert"></p>
+                <footer class="rr-dialog-actions">
+                    <p><span aria-hidden="true">✓</span> Saving adds a dated entry to the audit history.</p>
+                    <div><button type="button" class="button button-secondary" data-dialog-cancel>Cancel</button><button type="submit" class="button button-primary">Save outcome recheck</button></div>
+                </footer>
+            </form>
+        </dialog>
+
+        <dialog class="rr-dialog rr-protection-dialog" data-protection-dialog aria-labelledby="protection-title">
+            <div class="rr-protection-content">
+                <header class="rr-dialog-header">
+                    <div><p>Protected by design</p><h2 id="protection-title">How this workspace protects people</h2></div>
+                    <button type="button" class="rr-dialog-close" data-protection-close aria-label="Close data protection information">×</button>
+                </header>
+                <p class="rr-dialog-intro">Remedy Recheck limits what appears in the operational view and keeps every change accountable.</p>
+                <div class="rr-protection-grid">
+                    <article><span>01</span><div><h3>Pseudonymous cases</h3><p>Operational screens use case IDs. Worker names do not appear in the case overview.</p></div></article>
+                    <article><span>02</span><div><h3>Separated identities</h3><p>Identity information is kept outside case evidence and is available only through qualified protected channels.</p></div></article>
+                    <article><span>03</span><div><h3>Restricted access</h3><p>Assigned roles control access to supplier follow-up information and outcome decisions.</p></div></article>
+                    <article><span>04</span><div><h3>Accountable changes</h3><p>Outcome updates record the reviewer, date, decision, owner, and next due date in the audit history.</p></div></article>
+                    <article><span>05</span><div><h3>Protected lifecycle</h3><p>Information is encrypted during transfer and storage, retained only for defined periods, and deleted when no longer required.</p></div></article>
+                </div>
+                <footer class="rr-protection-actions"><button class="button button-primary" type="button" data-protection-close>Done</button></footer>
+            </div>
+        </dialog>
+
+        <div class="rr-toast" data-toast role="status" aria-live="polite"></div>
+    </div>
+
+    <script defer src="js/core/namespace.js"></script>
+    <script defer src="js/core/Component.js"></script>
+    <script defer src="js/core/Application.js"></script>
+    <script defer src="js/models/AuthUser.js"></script>
+    <script defer src="js/models/SupplierCase.js"></script>
+    <script defer src="js/models/RecheckRecord.js"></script>
+    <script defer src="js/models/CaseQuery.js"></script>
+    <script defer src="js/data/supplier-cases.js"></script>
+    <script defer src="js/repositories/SessionRepository.js"></script>
+    <script defer src="js/repositories/LocalCaseRepository.js"></script>
+    <script defer src="js/state/CaseStore.js"></script>
+    <script defer src="js/services/AuthenticationService.js"></script>
+    <script defer src="js/services/CaseMetrics.js"></script>
+    <script defer src="js/services/DateFormatter.js"></script>
+    <script defer src="js/components/LoginView.js"></script>
+    <script defer src="js/components/AuthenticationShell.js"></script>
+    <script defer src="js/components/AppMetrics.js"></script>
+    <script defer src="js/components/CaseFilters.js"></script>
+    <script defer src="js/components/CaseList.js"></script>
+    <script defer src="js/components/AuditTrailView.js"></script>
+    <script defer src="js/components/CaseDetailView.js"></script>
+    <script defer src="js/components/CaseDetail.js"></script>
+    <script defer src="js/components/RecheckDialog.js"></script>
+    <script defer src="js/components/ProtectionDialog.js"></script>
+    <script defer src="js/components/Toast.js"></script>
+    <script defer src="js/remedy-recheck-app.js"></script>
+</body>
+</html>
