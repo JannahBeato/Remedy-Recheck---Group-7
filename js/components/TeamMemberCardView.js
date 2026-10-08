@@ -25,8 +25,19 @@ components.TeamMemberCardView = class TeamMemberCardView {
     image.className = "team-photo";
     image.src = member.image;
     image.alt = `Portrait of ${member.name}`;
-    image.addEventListener("error", () => image.replaceWith(this.createPhotoFallback(member)), { once: true });
-    return image;
+
+    // A zoom below 1 shrinks the photo inside its circle, for photos cropped too tightly.
+    let photo = image;
+    if (member.imageZoom !== 1) {
+      photo = document.createElement("div");
+      photo.className = "team-photo team-photo-zoomed";
+      image.className = "";
+      image.style.transform = `scale(${member.imageZoom})`;
+      photo.append(image);
+    }
+
+    image.addEventListener("error", () => photo.replaceWith(this.createPhotoFallback(member)), { once: true });
+    return photo;
   }
 
   createPhotoFallback(member) {
