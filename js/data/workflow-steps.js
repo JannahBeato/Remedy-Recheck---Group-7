@@ -5,15 +5,15 @@ const { WorkflowStep } = models;
 data.workflowSteps = Object.freeze([
   new WorkflowStep({
     id: "record",
-    label: "Step 01 · Record the fix",
-    title: "Implementation stays visible, but it is not treated as the final result.",
+    label: "Step 01 · Record the Remedy",
+    title: "Document the suggested solution.",
     description:
-      "RR shows the issue category, agreed action, responsible owner, completion date, and supporting evidence for the supplier case.",
+      "RR keeps the issue, agreed solution, responsible party, and supporting evidence in one place. Creating a clear record before checking whether the solution has worked.",
   }),
   new WorkflowStep({
     id: "recheck",
     label: "Step 02 · Recheck the result",
-    title: "A separate status shows whether the situation improved afterwards.",
+    title: "Once a solution is in place, RR helps check whether the issue has actually improved ",
     description:
       "An authorized reviewer records the outcome as improved, unresolved, or not yet safely verified and links the result to supporting evidence.",
   }),
